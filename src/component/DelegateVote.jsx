@@ -12,7 +12,7 @@ const DelegateVote = () => {
 
   const handleDelegateClick = async () => {
     await delegate();
-    setDelegateToAddress(""); // Clear the input after delegation
+    setDelegateToAddress("");
   };
 
   return (
