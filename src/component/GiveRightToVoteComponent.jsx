@@ -4,10 +4,8 @@ import { useState } from "react";
 import useGiveRightToVote from "../hooks/useGiveRightToVote";
 
 const GiveRightToVoteComponent = () => {
-  // Use Reacts useState hook to create a state variable 'address' and a function 'setAddress' to update it
   const [address, setAddress] = useState("");
 
-  // Use the custom hook 'useGiveRightToVote' that presumably gives the right to vote to the given address
   const handleGiveRightToVote = useGiveRightToVote(address);
 
   return (
